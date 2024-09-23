@@ -18,7 +18,7 @@
 		FB46F68A2C9DCA8B00B6107B /* Boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F6892C9DCA8B00B6107B /* Boceto_1UITestsLaunchTests.swift */; };
 		FB46F69A2C9DDADF00B6107B /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F6992C9DDADF00B6107B /* Cita.swift */; };
 		FB46F69C2C9DDB0F00B6107B /* controlador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F69B2C9DDB0F00B6107B /* controlador_de_citas.swift */; };
-		FB46F69E2C9DDB1E00B6107B /* Controlador.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F69D2C9DDB1E00B6107B /* Controlador.swift */; };
+		FBDB15992CA1C20B00135FA2 /* ControladorPantallaCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDB15982CA1C20B00135FA2 /* ControladorPantallaCitas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		FB46F6892C9DCA8B00B6107B /* Boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB46F6992C9DDADF00B6107B /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB46F69B2C9DDB0F00B6107B /* controlador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_de_citas.swift; sourceTree = "<group>"; };
-		FB46F69D2C9DDB1E00B6107B /* Controlador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlador.swift; sourceTree = "<group>"; };
+		FBDB15982CA1C20B00135FA2 /* ControladorPantallaCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaCitas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 		FB46F6982C9DDAA500B6107B /* controlador_de_vistas */ = {
 			isa = PBXGroup;
 			children = (
-				FB46F69D2C9DDB1E00B6107B /* Controlador.swift */,
+				FBDB15982CA1C20B00135FA2 /* ControladorPantallaCitas.swift */,
 			);
 			path = controlador_de_vistas;
 			sourceTree = "<group>";
@@ -292,9 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB46F66B2C9DCA8B00B6107B /* ViewController.swift in Sources */,
-				FB46F69E2C9DDB1E00B6107B /* Controlador.swift in Sources */,
 				FB46F6672C9DCA8B00B6107B /* AppDelegate.swift in Sources */,
 				FB46F69A2C9DDADF00B6107B /* Cita.swift in Sources */,
+				FBDB15992CA1C20B00135FA2 /* ControladorPantallaCitas.swift in Sources */,
 				FB46F69C2C9DDB0F00B6107B /* controlador_de_citas.swift in Sources */,
 				FB46F6692C9DCA8B00B6107B /* SceneDelegate.swift in Sources */,
 			);

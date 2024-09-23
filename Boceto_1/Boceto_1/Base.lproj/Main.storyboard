@@ -70,9 +70,16 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="UHUM"/>
                                 <connections>
-                                    <segue destination="x7C-Ld-1iX" kind="show" id="ZjJ-Lk-EYI"/>
+                                    <segue destination="x7C-Ld-1iX" kind="show" destinationCreationSelector="al_abrir_la_pantalla:" id="ZjJ-Lk-EYI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hmmmm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1y-CC-AkM">
+                                <rect key="frame" x="161" y="652" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.81015625000000002" green="0.59073070451221465" blue="0.41374485818307316" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -171,6 +178,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tF8-2F-vgj"/>
                         <color key="backgroundColor" red="0.13143465909090912" green="0.08358673898633423" blue="0.062739570449807311" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.13143465909999999" green="0.083586738990000006" blue="0.062739570450000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="TtM-X6-gNL"/>
                 </viewController>
@@ -178,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="736.61971830985919"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Citas-->
         <scene sceneID="JU0-fO-ZM7">
             <objects>
-                <viewController id="x7C-Ld-1iX" sceneMemberID="viewController">
+                <viewController id="x7C-Ld-1iX" customClass="ControladorPantallaCitas" customModule="Boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S45-xe-zGL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,11 +226,23 @@
                                     <segue destination="OON-aW-75l" kind="show" id="YHC-go-qxg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Glup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-2j-vkg">
+                                <rect key="frame" x="167" y="594" width="49" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q2K-Ey-Xyw"/>
                         <color key="backgroundColor" red="0.49470049530190868" green="0.82005681818181819" blue="0.38220380865305359" alpha="0.89999657346491224" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.49470049529999999" green="0.82005681819999998" blue="0.38220380869999998" alpha="0.89999657349999995" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="HXw-9Y-OAr"/>
+                    <connections>
+                        <outlet property="NombreDeQuienLoDijo" destination="jRx-iF-XHB" id="iUS-Gd-oIa"/>
+                        <outlet property="QueDijoMuroTexto" destination="c9g-2j-vkg" id="fbz-at-7Hb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQ2-ez-76U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,7 +254,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
