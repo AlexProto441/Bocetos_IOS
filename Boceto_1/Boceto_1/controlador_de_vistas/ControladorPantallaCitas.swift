@@ -12,20 +12,16 @@ class ControladorPantallaCitas: UIViewController{
     @IBOutlet weak var NombreDeQuienLoDijo: UILabel!
     @IBOutlet weak var QueDijoMuroTexto: UILabel!
     
-    var MuroDeTexto:String
-    var QuienLoDijo:String
+    var cita_actual:Cita
     
     required init?(coder: NSCoder) {
-        self.MuroDeTexto = ""
-        self.QuienLoDijo = ""
+        self.cita_actual=Cita(quien_lo_dijo: "Desarrollador", que_dijo: "Tenemos un problema. Reportalo por una rebanada de pastel")
         super.init(coder: coder)
         print("Error: Se ha cargado el default de INIT")
     }
     
-    init?(muro_texto:String, de_quien:String, coder:NSCoder){
-        self.MuroDeTexto = muro_texto
-        self.QuienLoDijo = de_quien
-        
+    init?(cita_para_citar:Cita, coder:NSCoder){
+        self.cita_actual = cita_para_citar
         super.init(coder: coder)
     }
     
@@ -36,8 +32,8 @@ class ControladorPantallaCitas: UIViewController{
     }
     
     func inicializar_pantalla(){
-        NombreDeQuienLoDijo.text = self.QuienLoDijo
-        QueDijoMuroTexto.text = self.MuroDeTexto
+        NombreDeQuienLoDijo.text = cita_actual.nombre
+        QueDijoMuroTexto.text = cita_actual.texto
     }
     
 }
