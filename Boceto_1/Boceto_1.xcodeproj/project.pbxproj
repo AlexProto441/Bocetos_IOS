@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2701722CA70E6100BEB829 /* ControladorGeneradorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2701712CA70E6100BEB829 /* ControladorGeneradorCita.swift */; };
 		FB46F6672C9DCA8B00B6107B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F6662C9DCA8B00B6107B /* AppDelegate.swift */; };
 		FB46F6692C9DCA8B00B6107B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F6682C9DCA8B00B6107B /* SceneDelegate.swift */; };
 		FB46F66B2C9DCA8B00B6107B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46F66A2C9DCA8B00B6107B /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB2701712CA70E6100BEB829 /* ControladorGeneradorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorGeneradorCita.swift; sourceTree = "<group>"; };
 		FB46F6632C9DCA8B00B6107B /* Boceto_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boceto_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB46F6662C9DCA8B00B6107B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB46F6682C9DCA8B00B6107B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FBDB15982CA1C20B00135FA2 /* ControladorPantallaCitas.swift */,
+				FB2701712CA70E6100BEB829 /* ControladorGeneradorCita.swift */,
 			);
 			path = controlador_de_vistas;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				FB46F66B2C9DCA8B00B6107B /* ViewController.swift in Sources */,
 				FB46F6672C9DCA8B00B6107B /* AppDelegate.swift in Sources */,
 				FB46F69A2C9DDADF00B6107B /* Cita.swift in Sources */,
+				FB2701722CA70E6100BEB829 /* ControladorGeneradorCita.swift in Sources */,
 				FBDB15992CA1C20B00135FA2 /* ControladorPantallaCitas.swift in Sources */,
 				FB46F69C2C9DDB0F00B6107B /* controlador_de_citas.swift in Sources */,
 				FB46F6692C9DCA8B00B6107B /* SceneDelegate.swift in Sources */,
