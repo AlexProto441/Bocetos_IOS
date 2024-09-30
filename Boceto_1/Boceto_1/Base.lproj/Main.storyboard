@@ -228,9 +228,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe algo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRQ-WN-Ttn">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe algo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRQ-WN-Ttn">
                                 <rect key="frame" x="117" y="211" width="159" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="BG6-IO-7Ps"/>
+                                    <constraint firstAttribute="height" constant="34" id="jCr-x3-hjg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -238,9 +241,12 @@
                                     <action selector="quien_lo_dijo_view:" destination="scw-zD-uuh" eventType="editingDidEnd" id="Jsv-4f-Gvu"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Escribe algo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PBg-iU-Gxa">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe algo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PBg-iU-Gxa">
                                 <rect key="frame" x="117" y="396" width="159" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cq0-tF-POr"/>
+                                    <constraint firstAttribute="width" constant="159" id="gjV-Pn-gVG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -248,32 +254,28 @@
                                     <action selector="que_es_lo_que_dijo:" destination="scw-zD-uuh" eventType="editingDidEnd" id="oxU-SD-YUj"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quien lo dijo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-wN-JHW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quien lo dijo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-wN-JHW">
                                 <rect key="frame" x="126" y="166" width="141" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Que dijo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lu-i0-FKM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Que dijo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lu-i0-FKM">
                                 <rect key="frame" x="117" y="340" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHy-WC-Fsz">
-                                <rect key="frame" x="33" y="56" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHy-WC-Fsz">
+                                <rect key="frame" x="33" y="56" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
                                     <segue destination="scw-zD-uuh" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="KfK-U6-Mue"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dda-Ro-sJT">
-                                <rect key="frame" x="137" y="477" width="119" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dda-Ro-sJT">
+                                <rect key="frame" x="137" y="473" width="119" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Agregar Cita"/>
                                 <connections>
@@ -283,6 +285,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gpS-jZ-65W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hRQ-WN-Ttn" firstAttribute="top" secondItem="cMu-wN-JHW" secondAttribute="bottom" constant="24" id="32k-yR-uA2"/>
+                            <constraint firstItem="cMu-wN-JHW" firstAttribute="leading" secondItem="gpS-jZ-65W" secondAttribute="leading" constant="126" id="4UR-yL-xYL"/>
+                            <constraint firstItem="dda-Ro-sJT" firstAttribute="leading" secondItem="gpS-jZ-65W" secondAttribute="leading" constant="137" id="59W-b5-Rqy"/>
+                            <constraint firstItem="JHy-WC-Fsz" firstAttribute="leading" secondItem="gpS-jZ-65W" secondAttribute="leading" constant="33" id="5II-wS-Uaz"/>
+                            <constraint firstItem="PBg-iU-Gxa" firstAttribute="top" secondItem="6lu-i0-FKM" secondAttribute="bottom" constant="35" id="7hM-lx-DB0"/>
+                            <constraint firstItem="6lu-i0-FKM" firstAttribute="leading" secondItem="gpS-jZ-65W" secondAttribute="leading" constant="117" id="AEz-F1-k1C"/>
+                            <constraint firstItem="gpS-jZ-65W" firstAttribute="trailing" secondItem="6lu-i0-FKM" secondAttribute="trailing" constant="117" id="B4R-ey-dis"/>
+                            <constraint firstItem="gpS-jZ-65W" firstAttribute="trailing" secondItem="cMu-wN-JHW" secondAttribute="trailing" constant="126" id="H3H-pc-GQx"/>
+                            <constraint firstItem="hRQ-WN-Ttn" firstAttribute="leading" secondItem="gpS-jZ-65W" secondAttribute="leading" constant="117" id="MII-2t-hdt"/>
+                            <constraint firstItem="gpS-jZ-65W" firstAttribute="trailing" secondItem="PBg-iU-Gxa" secondAttribute="trailing" constant="117" id="Rue-5b-MrV"/>
+                            <constraint firstItem="cMu-wN-JHW" firstAttribute="top" secondItem="gpS-jZ-65W" secondAttribute="top" constant="166" id="U4s-pc-4ai"/>
+                            <constraint firstItem="gpS-jZ-65W" firstAttribute="bottom" secondItem="dda-Ro-sJT" secondAttribute="bottom" constant="334" id="chI-Et-0rm"/>
+                            <constraint firstItem="JHy-WC-Fsz" firstAttribute="top" secondItem="gpS-jZ-65W" secondAttribute="top" constant="56" id="dn5-6Y-f4g"/>
+                            <constraint firstItem="gpS-jZ-65W" firstAttribute="trailing" secondItem="hRQ-WN-Ttn" secondAttribute="trailing" constant="117" id="gpT-zV-Y04"/>
+                            <constraint firstItem="PBg-iU-Gxa" firstAttribute="leading" secondItem="gpS-jZ-65W" secondAttribute="leading" constant="117" id="qdC-Sm-3a1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="v0J-Mo-pCI"/>
                 </viewController>
@@ -367,7 +386,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
