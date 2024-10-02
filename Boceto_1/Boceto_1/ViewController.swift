@@ -19,18 +19,23 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let valor = Int.random(in: 0...100)
-        
         actualizar_cantidad()
-        
     }
+    
     func actualizar_cantidad(){
         labelcito.text = String(citas_disponibles.citas_creadas.count)
     }
     
     @IBSegueAction func al_abrir_la_pantalla(_ coder: NSCoder) -> ControladorPantallaCitas? {
         return ControladorPantallaCitas(cita_para_citar:citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+    }
+    
+    @IBSegueAction func al_abrir_pantalla2(_ coder: NSCoder) -> ControladorPantallaCitas? {
+        return ControladorPantallaCitas(cita_para_citar:citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+    }
+    
+    @IBSegueAction func abrir_pantalla_de_agregar_cita2(_ coder: NSCoder) -> ControladorGeneradorCita? {
+        return ControladorGeneradorCita(pantalla_anterior: self, coder: coder)
     }
     
     @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){

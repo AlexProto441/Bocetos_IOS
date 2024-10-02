@@ -11,22 +11,25 @@ class ControladorGeneradorCita: UIViewController{
     var quien_lo_dice:String = ""
     var que_dice:String = ""
     
+    var cita_creada: Cita? = nil
+    var opantalla_anterior: ViewController? = nil
+    
+    @IBOutlet weak var quien_lo_dijo_view:UITextField!
+    
+    @IBOutlet weak var que_es_lo_que_dijo:UITextField!
+    
     required init?(coder: NSCoder) {
             super.init(coder: coder)
         }
         
+    
         init ?(pantalla_anterior: ViewController, coder:NSCoder){
             self.opantalla_anterior = pantalla_anterior
             super.init(coder: coder)
         }
     
-    var cita_creada: Cita? = nil
-    
-    @IBOutlet weak var quien_lo_dijo_view:UITextView!
-    
-    @IBOutlet weak var que_es_lo_que_dijo:UITextView!
-    
-    @IBAction func agregar_cita_nueva(_ sender: UIButton) {
+    @IBAction func agregar_cita_nueva2(_ sender: UIButton) {
+        print(opantalla_anterior)
         if let quienDijo = quien_lo_dijo_view.text, !quienDijo.isEmpty, let queDijo = que_es_lo_que_dijo.text, !queDijo.isEmpty{
             cita_creada = Cita(quien_lo_dijo: quienDijo, que_dijo: queDijo)
             
