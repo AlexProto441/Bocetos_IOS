@@ -34,6 +34,10 @@ class ViewController: UIViewController {
         return ControladorPantallaCitas(cita_para_citar:citas_disponibles.obtener_cita_aleatoria(), coder: coder)
     }
     
+    @IBSegueAction func al_abrir_pantalla3(_ coder: NSCoder) -> ControladorPantallaCitas? {
+        return ControladorPantallaCitas(cita_para_citar:citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+    }
+    
     @IBSegueAction func abrir_pantalla_de_agregar_cita2(_ coder: NSCoder) -> ControladorGeneradorCita? {
         return ControladorGeneradorCita(pantalla_anterior: self, coder: coder)
     }
