@@ -34,8 +34,8 @@ class ControladorGeneradorCita: UIViewController{
             cita_creada = Cita(quien_lo_dijo: quienDijo, que_dijo: queDijo)
             
             opantalla_anterior?.citas_disponibles.agregar_cita(cita_creada!)
-                    //Actualizar cantidad de citas
-                    opantalla_anterior?.actualizar_cantidad()
+                //Actualizar cantidad de citas
+                opantalla_anterior?.actualizar_cantidad()
                     
                     //Cerrar vista actual
                     dismiss(animated: true, completion: nil)
