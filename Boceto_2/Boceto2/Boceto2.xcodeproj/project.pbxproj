@@ -17,6 +17,7 @@
 		FB58E40F2CB4341F00099FDD /* Boceto2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58E40E2CB4341F00099FDD /* Boceto2UITestsLaunchTests.swift */; };
 		FB58E41E2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58E41D2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift */; };
 		FB58E4202CB43D3200099FDD /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58E41F2CB43D3200099FDD /* VistaDeCelda.swift */; };
+		FBD94F902CB6D7F600F68C1C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD94F8F2CB6D7F600F68C1C /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FB58E40E2CB4341F00099FDD /* Boceto2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB58E41D2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FB58E41F2CB43D3200099FDD /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
+		FBD94F8F2CB6D7F600F68C1C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		FB58E3EA2CB4341E00099FDD /* Boceto2 */ = {
 			isa = PBXGroup;
 			children = (
+				FBD94F8E2CB6D79F00F68C1C /* Modelos */,
 				FB58E41B2CB4369400099FDD /* controladores_de_pantallas */,
 				FB58E3EB2CB4341E00099FDD /* AppDelegate.swift */,
 				FB58E3ED2CB4341E00099FDD /* SceneDelegate.swift */,
@@ -144,6 +147,14 @@
 				FB58E41F2CB43D3200099FDD /* VistaDeCelda.swift */,
 			);
 			path = vista_de_celdas;
+			sourceTree = "<group>";
+		};
+		FBD94F8E2CB6D79F00F68C1C /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FBD94F8F2CB6D7F600F68C1C /* Post.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 				FB58E3EE2CB4341E00099FDD /* SceneDelegate.swift in Sources */,
 				FB58E41E2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FB58E4202CB43D3200099FDD /* VistaDeCelda.swift in Sources */,
+				FBD94F902CB6D7F600F68C1C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
