@@ -34,21 +34,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bvR-ki-UXN">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="127" height="141"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Celda_Pantalla_Principal" id="LIB-6r-hNd" customClass="VistaDeCelda" customModule="Boceto2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="125.99999999999997" height="129"/>
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FHG-AJ-ie4">
-                                    <rect key="frame" x="0.0" y="0.0" width="125.99999999999997" height="129"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="127" height="141"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0e-2x-Ri4">
-                                            <rect key="frame" x="42" y="54" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0e-2x-Ri4">
+                                            <rect key="frame" x="41" y="8" width="61" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuerpo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFc-em-WgT">
+                                            <rect key="frame" x="41" y="54" width="57" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -56,13 +62,17 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     <constraints>
-                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="centerY" secondItem="FHG-AJ-ie4" secondAttribute="centerY" id="2lg-y6-uwR"/>
-                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="leading" secondItem="FHG-AJ-ie4" secondAttribute="leading" constant="42" id="o9W-sF-nzs"/>
-                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="top" secondItem="FHG-AJ-ie4" secondAttribute="top" constant="54" id="v1z-BB-UnL"/>
-                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="centerX" secondItem="FHG-AJ-ie4" secondAttribute="centerX" id="yUl-Dh-mdN"/>
+                                        <constraint firstAttribute="trailing" secondItem="f0e-2x-Ri4" secondAttribute="trailing" constant="25" id="2Kk-6L-BQc"/>
+                                        <constraint firstItem="MFc-em-WgT" firstAttribute="top" secondItem="f0e-2x-Ri4" secondAttribute="bottom" constant="25" id="C6V-I8-Sl8"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MFc-em-WgT" secondAttribute="trailing" constant="1" id="CI7-ES-5yt"/>
+                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="leading" secondItem="FHG-AJ-ie4" secondAttribute="leading" constant="41" id="LUh-g8-H46"/>
+                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="top" secondItem="FHG-AJ-ie4" secondAttribute="topMargin" id="dCT-xY-0WZ"/>
+                                        <constraint firstItem="f0e-2x-Ri4" firstAttribute="leading" secondItem="MFc-em-WgT" secondAttribute="leading" id="qMT-J8-DGq"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="127" height="141"/>
                                 <connections>
+                                    <outlet property="Cuerpo" destination="MFc-em-WgT" id="M0Z-Kg-nYS"/>
                                     <outlet property="Etiqueta" destination="f0e-2x-Ri4" id="f39-p1-dxw"/>
                                 </connections>
                             </collectionViewCell>
@@ -76,7 +86,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBK-Kd-8RO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-676"/>
+            <point key="canvasLocation" x="591.60305343511448" y="-676.05633802816908"/>
         </scene>
     </scenes>
     <resources>

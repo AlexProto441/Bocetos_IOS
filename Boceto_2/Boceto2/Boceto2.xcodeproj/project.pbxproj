@@ -17,6 +17,7 @@
 		FB58E40F2CB4341F00099FDD /* Boceto2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58E40E2CB4341F00099FDD /* Boceto2UITestsLaunchTests.swift */; };
 		FB58E41E2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58E41D2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift */; };
 		FB58E4202CB43D3200099FDD /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58E41F2CB43D3200099FDD /* VistaDeCelda.swift */; };
+		FB6C9E8D2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C9E8C2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift */; };
 		FBD94F902CB6D7F600F68C1C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD94F8F2CB6D7F600F68C1C /* Post.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		FB58E40E2CB4341F00099FDD /* Boceto2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB58E41D2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FB58E41F2CB43D3200099FDD /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
+		FB6C9E8C2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewControllerCelular.swift; sourceTree = "<group>"; };
 		FBD94F8F2CB6D7F600F68C1C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 		FB58E41B2CB4369400099FDD /* controladores_de_pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				FB6C9E8B2CB984BC00C682A9 /* estilos */,
 				FB58E41C2CB436AE00099FDD /* vista_de_celdas */,
 			);
 			path = controladores_de_pantallas;
@@ -147,6 +150,14 @@
 				FB58E41F2CB43D3200099FDD /* VistaDeCelda.swift */,
 			);
 			path = vista_de_celdas;
+			sourceTree = "<group>";
+		};
+		FB6C9E8B2CB984BC00C682A9 /* estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FB6C9E8C2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift */,
+			);
+			path = estilos;
 			sourceTree = "<group>";
 		};
 		FBD94F8E2CB6D79F00F68C1C /* Modelos */ = {
@@ -293,6 +304,7 @@
 				FB58E41E2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FB58E4202CB43D3200099FDD /* VistaDeCelda.swift in Sources */,
 				FBD94F902CB6D7F600F68C1C /* Post.swift in Sources */,
+				FB6C9E8D2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
