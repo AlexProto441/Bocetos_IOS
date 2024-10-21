@@ -7,8 +7,8 @@
 
 import UIKit
 
-class VistaDeCelda: UICollectionViewCell {
-    @IBOutlet weak var Etiqueta: UILabel!
-    
+class VistaDeZelda: UICollectionViewCell {
+    @IBOutlet weak var Title: UILabel!
+
     @IBOutlet weak var Cuerpo: UILabel!
 }

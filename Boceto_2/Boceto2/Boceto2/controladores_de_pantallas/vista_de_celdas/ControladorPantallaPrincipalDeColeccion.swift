@@ -10,7 +10,7 @@ import UIKit
 //private let IdentificadroDeCelda = "Celda_Pantalla_Principal"
 
 class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
-    private var Lista_de_publicaciones : [Post] = []
+    private var Lista_de_publicaciones : [Publicacion] = []
     private let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
     
     private let IdentificadroDeCelda = "Celda_Pantalla_Principal"
@@ -21,7 +21,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
         URLSession.shared.dataTask(with: Ubicacion){(datos, respuesta, error) 
             in do{
                 if let publicaciones_recibidas = datos{
-                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Post].self, from: publicaciones_recibidas)
+                    let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Publicacion].self, from: publicaciones_recibidas)
                     
                     self.Lista_de_publicaciones = prueba_de_interpretacion_de_datos
                         DispatchQueue.main .async {
@@ -72,18 +72,29 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
     }
     //funcion para identificar y crear cada una de las celdas creadas en el controller
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celda: VistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadroDeCelda, for: indexPath) as! VistaDeCelda
+        let celda: VistaDeZelda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadroDeCelda, for: indexPath) as! VistaDeZelda
     
         // Configure the cell
         //celda.backgroundColor = UIColor.green
         
-        celda.Etiqueta.text = self.Lista_de_publicaciones[indexPath.item].title
+        celda.Title.text = self.Lista_de_publicaciones[indexPath.item].title
         celda.Cuerpo.text = self.Lista_de_publicaciones[indexPath.item].body
         
         return celda
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se selecciono una celda \(indexPath)")
+        
+        let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
+                
+                // pantalla_de_publicacion.id_publicacion = indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.Lista_de_publicaciones[indexPath.item].id
+                
+                self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
+                
+                //print(self.navigationController)
+
+            }
         
         //let pantalla_de_publicaciones = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         //self.navigationController?.pushViewController(pantalla_de_publicaciones, animated: true)
@@ -121,5 +132,3 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
     
     }
     */
-
-}
