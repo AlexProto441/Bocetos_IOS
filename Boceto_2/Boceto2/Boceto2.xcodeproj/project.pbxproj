@@ -23,6 +23,7 @@
 		FB67922C2CC6A7B800962276 /* ControladorPantallaDelPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67922B2CC6A7B800962276 /* ControladorPantallaDelPost.swift */; };
 		FB67922E2CC6B91800962276 /* Comentarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67922D2CC6B91800962276 /* Comentarios.swift */; };
 		FB6C9E8D2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6C9E8C2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift */; };
+		FB8907452CD2970A00E837D7 /* VistaComentarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8907442CD2970A00E837D7 /* VistaComentarios.swift */; };
 		FBD94F902CB6D7F600F68C1C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD94F8F2CB6D7F600F68C1C /* Post.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		FB67922B2CC6A7B800962276 /* ControladorPantallaDelPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaDelPost.swift; sourceTree = "<group>"; };
 		FB67922D2CC6B91800962276 /* Comentarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentarios.swift; sourceTree = "<group>"; };
 		FB6C9E8C2CB984F500C682A9 /* EstiloCellViewControllerCelular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellViewControllerCelular.swift; sourceTree = "<group>"; };
+		FB8907442CD2970A00E837D7 /* VistaComentarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaComentarios.swift; sourceTree = "<group>"; };
 		FBD94F8F2CB6D7F600F68C1C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +189,7 @@
 				FBD94F8F2CB6D7F600F68C1C /* Post.swift */,
 				FB6792242CC6A5AB00962276 /* Usuarios.swift */,
 				FB67922D2CC6B91800962276 /* Comentarios.swift */,
+				FB8907442CD2970A00E837D7 /* VistaComentarios.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				FB58E3EC2CB4341E00099FDD /* AppDelegate.swift in Sources */,
 				FB67922C2CC6A7B800962276 /* ControladorPantallaDelPost.swift in Sources */,
 				FB6792252CC6A5AB00962276 /* Usuarios.swift in Sources */,
+				FB8907452CD2970A00E837D7 /* VistaComentarios.swift in Sources */,
 				FB67922E2CC6B91800962276 /* Comentarios.swift in Sources */,
 				FB58E3EE2CB4341E00099FDD /* SceneDelegate.swift in Sources */,
 				FB58E41E2CB4375F00099FDD /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
