@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
+class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     private let identificador_de_celda = "CeldaComentario"
     
     let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
@@ -35,6 +35,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         controlador_de_navegacion?.activar_navigation_bar(actviar: true)
         
         seccion_comentarios.dataSource = self
+        seccion_comentarios.delegate = self
         
         realizar_descarga_de_informacion()
     }
